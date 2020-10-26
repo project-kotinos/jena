@@ -8,7 +8,7 @@ build_targets:
     container:
       image: yourbase/yb_ubuntu:18.04
     commands:
-      - mvn -B verify
+      - mvn -B verify -Drat.skip=true
 ci:
   builds:
     - name: default
